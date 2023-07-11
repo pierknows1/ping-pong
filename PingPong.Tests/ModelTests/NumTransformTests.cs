@@ -49,7 +49,7 @@ namespace PingPong.Tests
             Assert.AreEqual(userNum.ToString(), result);
         }
 
-         [TestMethod]
+        [TestMethod]
         public void Output_ReturnsUserNum3WithPing()
         {
             string OutputString = "ping";
@@ -59,11 +59,21 @@ namespace PingPong.Tests
 
             Assert.AreEqual(OutputString, result);
         }
-                 [TestMethod]
+        [TestMethod]
         public void Output_ReturnsUserNum5WithPong()
         {
             string OutputString = "pong";
             NumTransform newNumTransform = new NumTransform { UserNum = 5 };
+
+            string result = newNumTransform.Output();
+
+            Assert.AreEqual(OutputString, result);
+        }
+        [TestMethod]
+        public void Output_ReturnsUserNum15WithPingPong()
+        {
+            string OutputString = "ping pong";
+            NumTransform newNumTransform = new NumTransform { UserNum = 15 };
 
             string result = newNumTransform.Output();
 
