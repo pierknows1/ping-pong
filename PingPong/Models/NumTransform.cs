@@ -9,7 +9,7 @@ namespace PingPong.Models
 
     }
 }
-
+//this is for a commit
 
 // planetLeft (){
 //   let left = this.expectancy - this.earthAge;
@@ -31,6 +31,10 @@ namespace PingPong.Models
 //             expect(planet.planetLeft()).toEqual("You have lived 79 past your expectancy.")
 //           });
 
+pier rodriguez pierknows@gmail.com 
+
+
+ESC18 <ponderosaprintingus@gmail.com>
 
 
 
