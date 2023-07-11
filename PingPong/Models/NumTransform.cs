@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 
 namespace PingPong.Models
@@ -5,24 +6,25 @@ namespace PingPong.Models
 
     public class NumTransform
     {
-        public int userNum;
+        public int UserNum {get; set; }
 
-        public string Output() {
-            if (userNum % 3 == 0 && userNum % 5 == 0) 
+        public string Output()
+        {
+            if (UserNum % 3 == 0 && UserNum % 5 == 0)
             {
                 return "ping pong";
             }
-            else if (userNum % 3 == 0) 
+            else if (UserNum % 3 == 0)
             {
                 return "ping";
             }
-            else if (userNum % 5 == 0)
+            else if (UserNum % 5 == 0)
             {
                 return "pong";
             }
-            else 
+            else
             {
-                return userNum;
+                return UserNum.ToString();
             }
         }
     }
