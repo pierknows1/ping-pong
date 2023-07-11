@@ -1,14 +1,34 @@
-using System.Collections.Generic;
+using System;
 
 namespace PingPong.Models
 {
 
     public class NumTransform
     {
+        public int userNum;
 
-
+        public string Output() {
+            if (userNum % 3 == 0 && userNum % 5 == 0) 
+            {
+                return "ping pong";
+            }
+            else if (userNum % 3 == 0) 
+            {
+                return "ping";
+            }
+            else if (userNum % 5 == 0)
+            {
+                return "pong";
+            }
+            else 
+            {
+                return userNum;
+            }
+        }
     }
 }
+
+
 //this is for a commit
 
 // planetLeft (){
@@ -31,10 +51,10 @@ namespace PingPong.Models
 //             expect(planet.planetLeft()).toEqual("You have lived 79 past your expectancy.")
 //           });
 
-pierknows1 pierknows@gmail.com 
+//pierknows1 pierknows@gmail.com 
 
 
-ESC18 <ponderosaprintingus@gmail.com>
+//ESC18 <ponderosaprintingus@gmail.com>
 
 
 

@@ -10,8 +10,21 @@ namespace PingPong.Tests
   {
     public void Dispose()
     {
-      Triangle.ClearAll();
+      NumTransform.ClearAll();
+    }
+    [TestMethod]
+
+    public void
+    Output_ReturnsUserNumWithPingPong()
+    {
+        int userNum = 3;
+        NumTransform newNumTransform = new NumTransform (userNum);
+
+        int result = newNumTransform.userNum;
+        Assert.AreEqual(userNum, result);
+
     }
     
     }
+
   }
