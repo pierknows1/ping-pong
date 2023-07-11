@@ -6,8 +6,10 @@ namespace PingPong.Models
 
     public class NumTransform
     {
-        public int UserNum {get; set; }
+        public int UserNum { get; set; }
 
+        public static List<NumTransform>
+        _instances = new List<NumTransform> { };
         public string Output()
         {
             if (UserNum % 3 == 0 && UserNum % 5 == 0)
@@ -27,7 +29,13 @@ namespace PingPong.Models
                 return UserNum.ToString();
             }
         }
+        public NumTransform(int userNum)
+        {
+            UserNum = userNum;
+            _instances.Add(this);
+        }
     }
+
 }
 
 

@@ -12,6 +12,11 @@ namespace PingPong
             Console.WriteLine("Welcome to the Ping Pong app!");
             Console.WriteLine("We'll return a list of numbers and messages based off your inputted number.");
             Console.WriteLine("Enter a number below:");
+            string UserNum = Console.ReadLine();
+            // new NumTransform(UserNum);
+            NumTransform OverallOutput = new NumTransform(int.Parse(UserNum));
+            string result = OverallOutput.Output();
+            Console.WriteLine(result);
         }
     }
 }
