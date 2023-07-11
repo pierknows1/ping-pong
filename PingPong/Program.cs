@@ -14,7 +14,9 @@ namespace PingPong
             Console.WriteLine("Enter a number below:");
             string UserNum = Console.ReadLine();
             // new NumTransform(UserNum);
+
             NumTransform OverallOutput = new NumTransform(int.Parse(UserNum));
+
             string result = OverallOutput.Output();
             Console.WriteLine(result);
         }

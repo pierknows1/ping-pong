@@ -8,8 +8,8 @@ namespace PingPong.Models
     {
         public int UserNum { get; set; }
 
-        public static List<NumTransform>
-        _instances = new List<NumTransform> { };
+        // public static List<NumTransform>
+        // _instances = new List<NumTransform> { };
         public string Output()
         {
             if (UserNum % 3 == 0 && UserNum % 5 == 0)
@@ -32,7 +32,18 @@ namespace PingPong.Models
         public NumTransform(int userNum)
         {
             UserNum = userNum;
-            _instances.Add(this);
+           // _instances.Add(this);
+        }
+
+        public string NumLoop(string UserNum) 
+        {
+            Output();
+            
+            // string[] theEntireArray = {};
+            // for (int index = 0; index < theEntireArray.Length; index++)
+            // {
+            //     Console.WriteLine($"{index}: {theEntireArray[index]}");
+            // }
         }
     }
 
