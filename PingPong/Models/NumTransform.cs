@@ -10,7 +10,7 @@ namespace PingPong.Models
         public string Output(int UserNum)
         {
             List<string> numbers = new List<string>();
-            for (int index = 0; index <= UserNum; index++)
+            for (int index = 1; index <= UserNum; index++)
             {
                 if (index % 3 == 0 && index % 5 == 0)
                 {
@@ -30,7 +30,8 @@ namespace PingPong.Models
                 }
             }
 
-            return numbers.ToString();
+            return string.Join(", ", numbers);
+
         }
         public NumTransform(int userNum)
         {

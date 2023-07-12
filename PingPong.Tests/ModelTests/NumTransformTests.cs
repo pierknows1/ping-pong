@@ -44,7 +44,7 @@ namespace PingPong.Tests
             int userNum = 2;
             NumTransform newNumTransform = new NumTransform(userNum) { UserNum = userNum };
 
-            string result = newNumTransform.Output();
+            string result = newNumTransform.Output(userNum);
 
             Assert.AreEqual(userNum.ToString(), result);
         }
@@ -55,7 +55,7 @@ namespace PingPong.Tests
             string OutputString = "ping";
             NumTransform newNumTransform = new NumTransform(3);
 
-            string result = newNumTransform.Output();
+            string result = newNumTransform.Output(3);
 
             Assert.AreEqual(OutputString, result);
         }
@@ -65,7 +65,7 @@ namespace PingPong.Tests
             string OutputString = "pong";
             NumTransform newNumTransform = new NumTransform(5);
 
-            string result = newNumTransform.Output();
+            string result = newNumTransform.Output(5);
 
             Assert.AreEqual(OutputString, result);
         }
@@ -75,7 +75,7 @@ namespace PingPong.Tests
             string OutputString = "ping pong";
             NumTransform newNumTransform = new NumTransform(15);
 
-            string result = newNumTransform.Output();
+            string result = newNumTransform.Output(15);
 
             Assert.AreEqual(OutputString, result);
         }
